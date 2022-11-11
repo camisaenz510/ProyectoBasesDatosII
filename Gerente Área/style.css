@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img.logo {
+	width: 40%;
+	height: 40%;
+}
+
+/*Edicion tipo y tamaño letras--------------------------------*/
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.header1 {
+	font-weight: 600;
+	margin-bottom: 1.5em;
+	
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: #A89C44;
+}
+
+input {
+	font-weight: 600;
+}
+
+
+/*Edicion fondo------------------------------------------------*/
+body {
+	background-color: #F1EFEF;
+}
+
+/*Linea centro---------------------------------------------------*/
+
+/*Form login---------------------------------------------------*/
+
+.form {
+	padding: 0 2em;
+}
+
+.form__input {
+	background-color: transparent;
+	width: 100%;
+	border: 0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline: none;
+	margin-bottom: 2em;
+	transition: all .5s ease;
+}
+
+.form__input:focus {
+	border-bottom-color: #94ab65;
+	box-shadow: 0 0 5px #94ab65;
+	border-radius: 4px;
+}
+
+.btn {
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color: black;
+	font-weight: 600;
+	background-color: #D2D2D2;
+	border: 1px solid #fff;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	margin-left: 1.5em;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #94ab65;
+	color: #fff;
+}
+
+/*media query---------------------------------------------------*/
