@@ -14,14 +14,8 @@ function consultarProducto() {
         }).then((datos) => {
             var producto = '';
             //En la variable producto se pone la información en lenguaje html que se mostrará en el modal de Bootstrap
-            document.getElementById("listaMarcas").innerHTML = ptoducto
+            document.getElementById("listaMarcas").innerHTML = producto
         });*/
 }
-
-
-
-
-
-
 
 
