@@ -89,3 +89,8 @@ body {
 }
 
 /*media query---------------------------------------------------*/
+
+/*bg del menu*/
+.bgMenu{
+	background-color: #DAF2FF;
+}

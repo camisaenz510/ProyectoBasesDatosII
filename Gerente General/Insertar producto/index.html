@@ -16,48 +16,102 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="vh-100 row d-flex">
-      <div class="p-1 mx-5 d-flex">
-        <div class="col-sm col-md-6 col-lg-6 col-xl-6">
-          <div class="d-flex mt-4">
-            <div class="form">
 
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bgMenu">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            
+            <!--create navbar-->
+            <h2 style="color: black;">Bienvenid@</h2>
 
-              <h4 class="header1">Insertar producto</h4>
-              <div class="row">
-                <label>PLU</label>
-                <input type="text" name="plu" id="plu" class="form__input">
-              </div>
-              <div class="row">
-                <label>EAN</label>
-                <input type="text" name="ean" id="ean" class="form__input">
-              </div>
-              <div class="row">
-                <label>DESCRIPCION</label>
-                <input type="text" name="descripcion" id="descripcion" class="form__input">
-              </div>
-              <div class="row">
-                <label>PESO</label>
-                <input type="text" name="peso" id="peso" class="form__input">
-              </div>
-              <div class="row">
-                <label>PRECIO</label>
-                <input type="text" name="precio" id="precio" class="form__input">
-              </div>
-              <div class="row">
-                <label>CANTIDAD</label>
-                <input type="text" name="cantidad" id="cantidad" class="form__input">
-              </div>
-              <div class="row d-flex">
-                <input id="insertar type=" submit" onclick="insertarProducto()" value="AGREGAR PRODUCTO" class="btn">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                <li>
+                    <a href="../Insertar Producto/index.html"  class="nav-link px-0 align-middle">
+                        <i class="fa-solid fa-pen-to-square"></i> <span class="ms-1 d-none d-sm-inline">Insertar producto</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Consultar Producto/index.html" class="nav-link align-middle px-0">
+                        <i class="fa-solid fa-person"></i> <span class="ms-1 d-none d-sm-inline">Consultar producto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Modificar producto/index.html" class="nav-link px-0 align-middle">
+                        <i class="fa-solid fa-pen-to-square"></i> <span class="ms-1 d-none d-sm-inline">Modificar producto</span></a>
+                </li>
+                <li>
+                    <a href="../Eliminar producto/index.html" class="nav-link px-0 align-middle">
+                        <i class="fa-solid fa-pen-to-square"></i> <span class="ms-1 d-none d-sm-inline">Eliminar producto</span></a>
+                </li>
+               
+               
+                 
+            </ul>
+            
+            <hr>
+              <!--create icon options-->
+            <div class="dropdown pb-4">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                    <span style="color:black;" class="d-none d-sm-inline mx-1">Nombre usuario</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    
+                    
+                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+        
+        <div class="container">
+          <div class="vh-100 row d-flex">
+            <div class="p-1 mx-5 d-flex">
+              <div class="col-sm col-md-6 col-lg-6 col-xl-6">
+                <div class="d-flex mt-4">
+                  <div class="form">
+      
+      
+                    <h4 class="header1">Insertar producto</h4>
+                    <div class="row">
+                      <label>PLU</label>
+                      <input type="text" name="plu" id="plu" class="form__input">
+                    </div>
+                    <div class="row">
+                      <label>EAN</label>
+                      <input type="text" name="ean" id="ean" class="form__input">
+                    </div>
+                    <div class="row">
+                      <label>DESCRIPCION</label>
+                      <input type="text" name="descripcion" id="descripcion" class="form__input">
+                    </div>
+                    <div class="row">
+                      <label>PESO</label>
+                      <input type="text" name="peso" id="peso" class="form__input">
+                    </div>
+                    <div class="row">
+                      <label>PRECIO</label>
+                      <input type="text" name="precio" id="precio" class="form__input">
+                    </div>
+                    <div class="row">
+                      <label>CANTIDAD</label>
+                      <input type="text" name="cantidad" id="cantidad" class="form__input">
+                    </div>
+                    <div class="row d-flex">
+                      <input id="insertar type=" submit" onclick="insertarProducto()" value="AGREGAR PRODUCTO" class="btn">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
-  </div>
+</div>
+  
+
 
 
   <div class="modal-dialog modal-sm">
