@@ -54,15 +54,21 @@ body {
 
 .form__input {
 	background-color: transparent;
-	width: 100%;
+	width: 35%;
 	border: 0px solid transparent;
 	border-radius: 0;
 	border-bottom: 1px solid #aaa;
 	padding: 1em .5em .5em;
 	padding-left: 2em;
 	outline: none;
-	margin: 0.5em auto;
+	margin: 0.5em;
 	transition: all .5s ease;
+	display: block;
+}
+
+label{
+	padding: 0;
+	margin: 0.2em;
 }
 
 .form__input:focus {
@@ -73,7 +79,7 @@ body {
 
 .btn {
 	transition: all .5s ease;
-	width: 70%;
+	width: 25%;
 	border-radius: 30px;
 	color: #fff;
 	font-weight: 600;

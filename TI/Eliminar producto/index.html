@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realizar venta</title>
+    <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fabe13b5d4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Cajero/PrincipalStyle.css">
@@ -22,16 +22,30 @@
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link align-middle px-0">
-                                <i class="fa-solid fa-person"></i> <span class="ms-1 d-none d-sm-inline">Realizar venta</span>
+                            <a href="/TI/Bitacora/index.html" class="nav-link align-middle px-0">
+                                <i class="fa-solid fa-person"></i> <span class="ms-1 d-none d-sm-inline">Ver bitacoras</span>
                             </a>
                         </li>
                          
                         <li>
-                            <a href="../Consultar precio/index.html" class="nav-link px-0 align-middle">
-                                <i class="fa-solid fa-pen-to-square"></i> <span class="ms-1 d-none d-sm-inline">Consultar precio</span></a>
+                            <a href="/TI/Consultar producto/index.html" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-pen-to-square"></i> <span class="ms-1 d-none d-sm-inline">Consultar producto</span></a>
                         </li>
                         
+                        <li>
+                            <a href="/TI/Eliminar producto/index.html" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-calendar"></i> <span class="ms-1 d-none d-sm-inline">Eliminar producto</span> </a>
+                        </li>  
+
+                        <li>
+                            <a href="/TI/Insertar producto/index.html" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-calendar"></i> <span class="ms-1 d-none d-sm-inline">Insertar producto</span> </a>
+                        </li>  
+
+                        <li>
+                            <a href="/TI/Modificar producto/index.html" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-calendar"></i> <span class="ms-1 d-none d-sm-inline">Modificar producto</span> </a>
+                        </li>  
                     </ul>
                     
                     <hr>
@@ -56,33 +70,16 @@
               <!--create content-->
             <div class="col py-3">
                 <div class="components">
+			 <!--add main information-->
 
-                    <label>PLU</label>
-                    <input type="text" name="plu" id="plu" class="form__input">
+             <label>ID PRODUCTO</label>
+             <input type="text" name="idProducto" id="idProducto" class="form__input">
 
-                    <label>EAN</label>
-                    <input type="text" name="ean" id="ean" class="form__input">
-
-                    <label>DESCRIPCION</label>
-                    <input type="text" name="descripcion" id="descripcion" class="form__input">
-
-                    <label>PESO</label>
-                    <input type="text" name="peso" id="peso" class="form__input">
-
-                    <label>PRECIO</label>
-                    <input type="text" name="precio" id="precio" class="form__input">
-
-                    <label>CANTIDAD</label>
-                    <input type="text" name="cantidad" id="cantidad" class="form__input">
-
-                    <button id="sendData" type="submit" class="btn">AGREGAR</button>
-			
+             <button id="sendData" type="submit" class="btn">ELIMINAR</button>
                 </div>
                                
             </div>
         </div>
     </div>
-
-    <script type="module" src="RealizaVenta.js"></script>
 </body>
 </html>
